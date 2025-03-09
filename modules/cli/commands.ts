@@ -177,7 +177,7 @@ function showHelp(): void {
 Ponder MusicXML CLI
 
 Usage:
-  pmxl <command> <file> [options]
+  ponder-musicxml <command> <file> [options]
 
 Commands:
   version     Get MusicXML version
@@ -190,8 +190,8 @@ Options:
   -o, --output   Specify output file path (for measures command)
 
 Examples:
-  pmxl version example.musicxml
-  pmxl summary example.musicxml
-  pmxl measures example.musicxml -o positions.csv
+  ponder-musicxml version example.musicxml
+  ponder-musicxml summary example.musicxml
+  ponder-musicxml measures example.musicxml -o positions.csv
 `);
 }

@@ -2,21 +2,6 @@
 
 MusicXMLのファイルを扱うためのCLIツール。DenoとTypeScriptで実装されている。
 
-## インストール方法
-
-Denoがインストールされている環境で、以下のコマンドを実行してください：
-
-```bash
-# インストール
-deno install --allow-read --allow-write -n pmxl --global https://raw.githubusercontent.com/yourusername/ponder-musicxml-cli/main/cli.ts
-
-# パスの設定（必要な場合）
-export PATH="$HOME/.deno/bin:$PATH"
-
-# 動作確認
-pmxl --help
-```
-
 ## 目標
 
 以下の処理を可能とするCLIツールを目指す。
@@ -33,19 +18,6 @@ pmxl --help
 - 各小節の位置を取得してCSV形式で出力
   - 小節番号
   - 小節の位置(top, left, width, height)
-
-## 使用方法
-
-```bash
-# MusicXMLのバージョンを取得
-pmxl version example.musicxml
-
-# MusicXMLの概要を表示
-pmxl summary example.musicxml
-
-# 小節の位置情報をCSVで出力
-pmxl measures example.musicxml -o positions.csv
-```
 
 ## 技術スタック
 

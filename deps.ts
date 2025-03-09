@@ -3,11 +3,11 @@
  */
 
 // Deno standard library
-export { parse } from "https://deno.land/std@0.190.0/flags/mod.ts";
-export { join } from "https://deno.land/std@0.190.0/path/mod.ts";
+export { parse } from "std/flags";
+export { join } from "std/path";
 
 // XML parsing
-export { XMLParser } from "npm:fast-xml-parser@^4.3.5";
+export { XMLParser } from "fast-xml-parser";
 
 // Result type for error handling
-export { err, ok, Result } from "npm:neverthrow@^8.2.0";
+export { err, ok, Result } from "neverthrow";
